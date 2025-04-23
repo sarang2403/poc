@@ -1,0 +1,18 @@
+<html>
+    <head><title>Home</title></head>
+    <body>
+        <h1>Denver Site Dashboard</h1>
+        <a href="{{ url_for('add_tier1_ipv4') }}">
+            <button>Add Tier-1 ISP(IPv4)</button>
+        </a>
+        <a href="{{ url_for('add_tier3_ipv4') }}">
+            <button>Add Tier-3 ISP(IPv4)</button>
+        </a>
+        <a href="{{ url_for('add_tier1_ipv6') }}">
+            <button>Add Tier-1 ISP(IPv6)</button>
+        </a>
+        <a href="{{ url_for('add_tier3_ipv6') }}">
+            <button>Add Tier-3 ISP(IPv6)</button>
+        </a>
+    </body>
+</html>

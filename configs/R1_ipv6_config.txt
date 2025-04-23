@@ -1,0 +1,8 @@
+
+interface fa1/0
+  ipv6 address 10:1:1::1/64
+  no shut
+
+
+
+

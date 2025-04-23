@@ -1,0 +1,18 @@
+mpls label protocol ldp
+mpls ip
+
+router ospf 1
+network 0.0.0.0 0.0.0.0 area 0 
+
+{% for name,ip in interfaces.items() %}
+interface {{ name }}
+  ip address {{ ip }}
+  no shut
+  {% if not name.startswith('lo') %}
+  mpls ip
+  {% endif %}
+{% endfor %}
+
+
+
+

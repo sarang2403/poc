@@ -1,0 +1,22 @@
+mpls label protocol ldp
+mpls ip
+
+router ospf 1
+network 0.0.0.0 0.0.0.0 area 0 
+
+
+interface lo0
+  ip address 172.16.1.1 255.255.255.255
+  no shut
+  
+
+interface fa1/0
+  ip address 10.1.1.1 255.255.255.0
+  no shut
+  
+  mpls ip
+  
+
+
+
+

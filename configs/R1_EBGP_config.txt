@@ -1,0 +1,8 @@
+interface gi2/0
+ip address 50:1:1::2/64
+no shut
+
+router bgp 100
+neighbor 50:1:1::1 remote-as 200
+address-family ipv6 unicast
+neighbor 50:1:1::1 activate
