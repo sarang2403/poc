@@ -1,3 +1,5 @@
+ipv6 unicast-routing
+
 {% for name,ip in interfaces.items() %}
 interface {{ name }}
   ipv6 address {{ ip }}
