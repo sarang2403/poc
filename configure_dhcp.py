@@ -41,8 +41,8 @@ def main():
     hdl = connect(dhcp_server)
     try: 
         hdl.send_config_from_file(output_file)
-        logger.success('Configured DHCP Server Successfully')
-        time.sleep(30)
+        logger.success('Configured DHCP Server Successfully. Waiting for 40 seconds')
+        time.sleep(40)
 
     except:
         sys.exit(1)
